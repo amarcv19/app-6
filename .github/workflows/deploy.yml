@@ -11,8 +11,8 @@ env:
 jobs:
   test:
     env:
-      MONGODB_PASSWORD: 4hJy00vcyT5p31sX
-      MONGODB_USERNAME: amarcv19_db_user
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_CLUSTER_ADDRESS: cluster0.0xvlhia.mongodb.net
       PORT: 8080
     environment: testing
